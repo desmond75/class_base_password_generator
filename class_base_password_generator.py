@@ -23,8 +23,6 @@ class PasswordGenerator:
 		for n in range(4):
 			password += random.choice(self.letters)
 			password += random.choice(self.letters)
-			
-
 		return password
 
 
@@ -33,21 +31,17 @@ class PasswordGenerator:
 		'''Selects  random letters mix with Caps,
 		   lower, and special characters  and increments
 		   password with it so as to generate password'''
-
 		password = ''
 		for i in range(6):
 			password += random.choice(self.letters)
 			password += str(random.choice(self.number))
 			password += random.choice(self.special_characters)
 			password += random.choice(self.capital_letters)
-
-		#print('This is your password')
 		return password
 
 class Menu:
 	def __init__(self):
 		self.password_generator = PasswordGenerator() 
-
 
 	def display(self):
 		'''Displays the menu'''
@@ -72,12 +66,10 @@ class Menu:
 					print(self.password_generator.generate_weak_password())
 				elif choice == 3:
 					print(self.password_generator.generate_strong_password())
-
 				else:
 					print('Invalid choice')
 			except ValueError as e:
 				print('Make sure to enter a choice')
-
 
 if __name__ == '__main__':
 	Menu().run()
