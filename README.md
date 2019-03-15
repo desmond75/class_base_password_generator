@@ -1,2 +1,4 @@
 # class_base_password_generator
-password generator written using classes in python 
+Passworhatd generator wrtten using classes 
+# This program helps to generate passwords
+# What i learn
