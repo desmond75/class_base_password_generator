@@ -1,4 +1,4 @@
 # class_base_password_generator
 # What i learn
--) More familiarity with python classes  
--) Understanding python range function 
+1) More familiarity with python classes  
+2) Understanding python range function 
